@@ -1,0 +1,24 @@
+
+
+{
+    "coupons": [
+      {
+        "id": 1,
+        "brand": "Brand A",
+        "discount": "20%",
+        "code": "SAVE20"
+      },
+      {
+        "id": 2,
+        "brand": "Brand B",
+        "discount": "15%",
+        "code": "SAVE15"
+      },
+      {
+        "id": 3,
+        "brand": "Brand C",
+        "discount": "10%",
+        "code": "SAVE10"
+      }
+    ]
+  }
