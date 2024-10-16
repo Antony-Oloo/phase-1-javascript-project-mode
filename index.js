@@ -1,7 +1,7 @@
 // Fetch coupons from the JSON file
 const fetchCoupons = async () => {
   try {
-    const response = await fetch('coupons.json'); // Adjust path if necessary
+    const response = await fetch('db.json'); 
     const data = await response.json();
     displayCoupons(data.coupons);
   } catch (error) {

@@ -2,24 +2,38 @@
   "coupons": [
     {
       "id": 1,
-      "brand": "Brand A",
-      "discount": "20% off",
-      "description": "Get 20% off your first purchase at Brand A!",
-      "image": "https://via.placeholder.com/150"
+      "brand": "Safaricom",
+      "description": "Get 20% off on data bundles with your next purchase.",
+      "discount": "20% OFF",
+      "image": "https://www.example.com/safaricom-logo.png"
     },
     {
       "id": 2,
-      "brand": "Brand B",
-      "discount": "$10 off",
-      "description": "Save $10 on orders over $50 at Brand B!",
-      "image": "https://via.placeholder.com/150"
+      "brand": "KCB Bank",
+      "description": "Save on transaction fees with 10% off for mobile banking transfers.",
+      "discount": "10% OFF",
+      "image": "https://www.example.com/kcb-bank-logo.png"
     },
     {
       "id": 3,
-      "brand": "Brand C",
-      "discount": "Free shipping",
-      "description": "Enjoy free shipping on all orders from Brand C!",
-      "image": "https://via.placeholder.com/150"
+      "brand": "Tusker",
+      "description": "Buy 2 get 1 free on all Tusker beer packs.",
+      "discount": "BUY 2 GET 1 FREE",
+      "image": "https://www.example.com/tusker-logo.png"
+    },
+    {
+      "id": 4,
+      "brand": "Java House",
+      "description": "Enjoy 15% off on all coffee purchases before 10am.",
+      "discount": "15% OFF",
+      "image": "https://www.example.com/java-house-logo.png"
+    },
+    {
+      "id": 5,
+      "brand": "Jumia",
+      "description": "Get up to 30% off on selected electronics when you shop on Jumia.",
+      "discount": "UP TO 30% OFF",
+      "image": "https://www.example.com/jumia-logo.png"
     }
   ]
 }
