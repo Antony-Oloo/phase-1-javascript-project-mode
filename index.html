@@ -12,20 +12,43 @@
       <div class="col-12">
         <h1 class="text-white">Welcome to your daily deals!!!!!</h1>
         <h1 class="text-white">Coupon and Discounts</h1>
-    
         <p class="lead text-white">Get the best deals on your favorite brands!</p>
         <p class="lead text-white">HURRY HURRY HURRY HURRY</p>
       </div>
     </div>
   </div>
 
-  <!-- Coupon Container -->
+  <!-- Coupon Container: Available Coupons -->
   <div id="coupon-list" class="container mt-4">
+    <h2>Available Coupons</h2>
+    <div class="row">
     <!-- Coupon cards will be dynamically inserted here -->
-    
-      <!-- Coupon cards will be dynamically inserted here -->
   </div>
 
-  <script src="../js/index.js"></script>
+  <!-- Form to Add a New Coupon (moved to the bottom) -->
+  <div class="container mt-5">
+    <h2>Add a New Coupon</h2>
+    <form id="coupon-form">
+      <div class="form-group">
+        <label for="brand">Brand Name</label>
+        <input type="text" id="brand" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <input type="text" id="description" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="discount">Discount</label>
+        <input type="text" id="discount" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        <input type="url" id="image" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary mt-2">Add Coupon</button>
+    </form>
+  </div>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
