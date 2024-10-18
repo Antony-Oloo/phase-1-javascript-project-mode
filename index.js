@@ -43,7 +43,7 @@ const openQrPopup = (couponBrand, couponCode) => {
 
   // Generate new QR code
   new QRCode(qrCodeContainer, {
-    text: `https://yourwebsite.com/redeem?code=${couponCode}`,
+    text: `https://github.com/Antony-Oloo/phase-1-javascript-project-mode/redeem?code=${couponCode}`,
     width: 128,
     height: 128
   });
