@@ -5,14 +5,14 @@
       "brand": "Safaricom",
       "description": "Get 20% off on data bundles with your next purchase.",
       "discount": "20% OFF",
-      "image": "/assets/safaricom.png"
+      "image": "assets/safaricom.png"
     },
     {
       "id": 2,
       "brand": "KCB Bank",
       "description": "Save on transaction fees with 10% off for mobile banking transfers.",
       "discount": "10% OFF",
-      "image": "/assets/kcb-logo.png"
+      "image": "assets/kcb-logo.png"
     },
     {
       "id": 3,
@@ -26,14 +26,14 @@
       "brand": "Java House",
       "description": "Enjoy 15% off on all coffee purchases before 10am.",
       "discount": "15% OFF",
-      "image": "/assets/java.jpg"
+      "image": "assets/java.jpg"
     },
     {
       "id": 5,
       "brand": "Jumia",
       "description": "Get up to 30% off on selected electronics when you shop on Jumia.",
       "discount": "UP TO 30% OFF",
-      "image": "/assets/jumia.png"
+      "image": "assets/jumia.png"
     }
   ]
 }
