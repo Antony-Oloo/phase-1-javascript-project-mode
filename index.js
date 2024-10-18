@@ -29,6 +29,42 @@ const generateCouponCode = () => {
   return code;
 };
 
+// Function to open the QR code popup and generate the QR code
+const openQrPopup = (couponBrand, couponCode) => {
+  const qrPopup = document.getElementById('qr-popup');
+  const qrMessage = document.getElementById('qr-message');
+  const qrCodeContainer = document.getElementById('qrcode');
+
+  // Set the custom message in the popup
+  qrMessage.textContent = `Congratulations on unlocking the coupon for ${couponBrand}!\nUse this QR code to redeem your coupon at the nearest store.\nCoupon Code: ${couponCode}`;
+
+  // Clear previous QR code (if any)
+  qrCodeContainer.innerHTML = '';
+
+  // Generate new QR code
+  new QRCode(qrCodeContainer, {
+    text: `https://yourwebsite.com/redeem?code=${couponCode}`,
+    width: 128,
+    height: 128
+  });
+
+  // Display the QR code popup
+  qrPopup.style.display = 'block';
+
+  // Close button functionality
+  const closeButton = document.querySelector('.close');
+  closeButton.onclick = () => {
+    qrPopup.style.display = 'none';  // Hide popup on close
+  };
+
+  // Close popup if user clicks outside of it
+  window.onclick = (event) => {
+    if (event.target === qrPopup) {
+      qrPopup.style.display = 'none';  // Hide popup when clicking outside of it
+    }
+  };
+};
+
 // Create a coupon card dynamically (both for fetched and new coupons)
 const createCouponCard = (coupon) => {
   const couponCard = document.createElement('div');
@@ -51,11 +87,11 @@ const createCouponCard = (coupon) => {
   const deleteButton = couponCard.querySelector('.delete-coupon');
   deleteButton.addEventListener('click', () => couponCard.remove());
 
-  // Add get coupon functionality
+  // Add get coupon functionality to display QR code
   const getCouponButton = couponCard.querySelector('.get-coupon');
   getCouponButton.addEventListener('click', () => {
     const couponCode = generateCouponCode();  // Generate a coupon code
-    alert(`Congratulations on unlocking the coupon for ${coupon.brand}!\nUse code: ${couponCode} to redeem at your nearest store.`);
+    openQrPopup(coupon.brand, couponCode);    // Display the QR popup with code
   });
 
   return couponCard;

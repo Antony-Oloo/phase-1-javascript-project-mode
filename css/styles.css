@@ -1,6 +1,5 @@
 @import url("bootstrap.css");
 
-/* Your custom styles will go below */
 .bg-image {
     background-image: url('../assets/saleimage.jpg'); /* Update path to your image */
     background-size: cover;
