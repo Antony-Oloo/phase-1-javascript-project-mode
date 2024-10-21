@@ -6,7 +6,7 @@
 // Fetch coupons from the JSON
 const fetchCoupons = async () => {
   try {
-    const response = await fetch('db.json');
+    const response = await fetch('https://phase-1-javascript-project-mode-1.onrender.com');
     const data = await response.json();
     displayCoupons(data.coupons); // Pass fetched data to the UI logic for rendering
   } catch (error) {
