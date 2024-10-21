@@ -7,6 +7,12 @@
 const fetchCoupons = async () => {
   try {
     const response = await fetch('https://phase-1-javascript-project-mode-1.onrender.com/coupons');
+    
+    if (!response.ok) {
+      const errorMessage = await response.text(); // Get the error response text
+      throw new Error(`Error: ${response.status} - ${errorMessage}`);
+    }
+
     const data = await response.json();
     displayCoupons(data); // Pass fetched data to the UI logic for rendering
   } catch (error) {
