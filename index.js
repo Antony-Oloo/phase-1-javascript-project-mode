@@ -8,7 +8,7 @@ const fetchCoupons = async () => {
   try {
     const response = await fetch('https://phase-1-javascript-project-mode-1.onrender.com');
     const data = await response.json();
-    displayCoupons(data.coupons); // Pass fetched data to the UI logic for rendering
+    displayCoupons(data); // Pass fetched data to the UI logic for rendering
   } catch (error) {
     console.error("Error fetching coupons:", error);
   }
