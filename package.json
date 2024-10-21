@@ -1,17 +1,17 @@
 {
   "name": "phase-1-javascript-project-mode",
   "version": "1.0.0",
-  "description": "## Learning Goals",
+  "description": "Project to demonstrate JavaScript skills",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "json-server": "^1.0.0-beta.3"
+  "dependencies": {
+    "json-server": "^0.16.3"
   }
 }
-
 
